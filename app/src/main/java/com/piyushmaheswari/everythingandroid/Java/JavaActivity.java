@@ -19,5 +19,9 @@ public class JavaActivity extends AppCompatActivity {
         TextView d;
         ImageView s;
 
+
+        TextView ds;
+        ImageView ss;
+
     }
 }
