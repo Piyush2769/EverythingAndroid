@@ -10,9 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
+import android.widget.TextView;
 
 import com.piyushmaheswari.everythingandroid.R;
-import com.ramotion.foldingcell.FoldingCell;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -32,6 +32,7 @@ public class BasicsFragment extends Fragment {
         // Required empty public constructor
     }
 
+    private TextView ee;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
