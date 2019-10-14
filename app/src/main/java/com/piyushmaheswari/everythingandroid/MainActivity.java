@@ -101,11 +101,14 @@ public class MainActivity extends AppCompatActivity
          }
          else if (id == R.id.nav_feedback)
          {
+             Intent i=new Intent(MainActivity.this,FeedbackActivity.class);
+             startActivity(i);
 
          }
          else if (id == R.id.nav_sendQuestions)
          {
-
+             Intent ii=new Intent(MainActivity.this,SendQuestionsActivity.class);
+             startActivity(ii);
          }
          else if (id == R.id.nav_Contributors)
          {
