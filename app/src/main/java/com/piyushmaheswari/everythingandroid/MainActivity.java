@@ -6,6 +6,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -13,6 +15,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
 import com.piyushmaheswari.everythingandroid.Android.AndroidActivity;
@@ -112,7 +115,13 @@ public class MainActivity extends AppCompatActivity
          }
          else if (id == R.id.nav_Contributors)
          {
+             ViewGroup viewGroup = findViewById(R.id.content);
+             View dialogView = LayoutInflater.from(this).inflate(R.layout.layout_contributors, viewGroup, false);
 
+             AlertDialog.Builder builder = new AlertDialog.Builder(this);
+             builder.setView(dialogView);
+             AlertDialog alertDialog = builder.create();
+             alertDialog.show();
          }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

@@ -13,7 +13,7 @@ public class SendQuestionsActivity extends AppCompatActivity {
 
 
     private WebView webView;
-    private TextView d;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
