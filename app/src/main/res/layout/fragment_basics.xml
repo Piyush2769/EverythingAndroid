@@ -7,7 +7,6 @@
     android:clipToPadding="false"
     tools:context=".Android.BasicsFragment">
 
-
    <ExpandableListView
        android:id="@+id/expandableList"
        android:divider="#000"

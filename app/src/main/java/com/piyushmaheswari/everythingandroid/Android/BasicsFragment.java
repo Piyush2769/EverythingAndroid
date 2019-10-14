@@ -18,9 +18,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class BasicsFragment extends Fragment {
 
     private ExpandableListView expandableListView;
@@ -32,7 +29,6 @@ public class BasicsFragment extends Fragment {
         // Required empty public constructor
     }
 
-    private TextView ee;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

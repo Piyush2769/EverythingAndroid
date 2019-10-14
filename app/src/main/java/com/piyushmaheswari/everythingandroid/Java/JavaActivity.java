@@ -15,13 +15,5 @@ public class JavaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java);
-
-        TextView d;
-        ImageView s;
-
-
-        TextView ds;
-        ImageView ss;
-
     }
 }

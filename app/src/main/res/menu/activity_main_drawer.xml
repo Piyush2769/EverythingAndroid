@@ -4,36 +4,30 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+
         <item
-            android:id="@+id/nav_android"
+            android:id="@+id/nav_share"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Android" />
+            android:title="Share" />
         <item
-            android:id="@+id/nav_java"
+            android:id="@+id/nav_rate"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Java" />
+            android:title="Rate Us" />
         <item
-            android:id="@+id/nav_kotlin"
+            android:id="@+id/nav_feedback"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Kotlin" />
+            android:title="Feedback" />
 
         <item
-            android:id="@+id/nav_flutter"
+            android:id="@+id/nav_sendQuestions"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Flutter" />
+            android:title="Send Questions" />
+
+        <item
+            android:id="@+id/nav_Contributors"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Contributors" />
+
     </group>
-
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/menu_share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_send" />
-        </menu>
-    </item>
 
 </menu>
