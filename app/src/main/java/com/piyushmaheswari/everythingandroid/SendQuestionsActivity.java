@@ -7,12 +7,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.TextView;
 
 public class SendQuestionsActivity extends AppCompatActivity {
 
 
     private WebView webView;
-
+    private TextView d;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
