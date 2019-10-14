@@ -29,9 +29,9 @@ public class SendQuestionsActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        webView=findViewById(R.id.webViewFeed);
-        webView.setWebViewClient(new SendQuestionsActivity.MyBrowser());
-        webView.loadUrl("https://forms.gle/5X7xaCyoguw5m8o77");
+        webView=findViewById(R.id.webViewSend);
+        webView.setWebViewClient(new MyBrowser());
+        webView.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLSddGfJACdAxaqKMT4tmm1CGPDqymOXlm0jcnWfTuPKoemyBUQ/viewform");
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
 

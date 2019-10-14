@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -28,11 +29,13 @@ public class FeedbackActivity extends AppCompatActivity {
         }
 
         webView=findViewById(R.id.webViewFeed);
-        webView.setWebViewClient(new MyBrowser());
-        webView.loadUrl("https://forms.gle/HmruerckxyBvUDSr7");
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
 
+        MyBrowser webViewClient = new MyBrowser();
+        webView.setWebViewClient(webViewClient);
+
+        webView.loadUrl("http://everythingandroid.ashishawasthi.info/forms/questions.html");
     }
 
     private class MyBrowser extends WebViewClient {

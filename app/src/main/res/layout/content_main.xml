@@ -3,10 +3,10 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_centerInParent="true"
-    android:background="#ADFF2F">
+    android:background="#000">
 
     <LinearLayout
+        android:layout_centerInParent="true"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
