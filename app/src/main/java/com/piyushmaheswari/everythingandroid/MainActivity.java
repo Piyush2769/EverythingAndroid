@@ -1,6 +1,8 @@
 package com.piyushmaheswari.everythingandroid;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     RelativeLayout android,java;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,22 +75,42 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-         if (id == R.id.nav_share) {
+         if (id == R.id.nav_share)
+         {
+             Intent sendIntent = new Intent();
+             sendIntent.setAction(Intent.ACTION_SEND);
+             sendIntent.putExtra(Intent.EXTRA_TEXT,
+                     "Hey check out my app at: https://play.google.com/store/apps/details?id=com.piyushmaheswari.everythingandroid");
+             sendIntent.setType("text/plain");
+             startActivity(sendIntent);
 
-            Intent i=new Intent(MainActivity.this, AndroidActivity.class);
-            startActivity(i);
+         }
+         else if (id == R.id.nav_rate)
+         {
 
-        } else if (id == R.id.nav_rate) {
+             Uri uri = Uri.parse("market://details?id=" + getPackageName());
+             Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+             goToMarket.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY | Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
 
+             try {
+                 startActivity(goToMarket);
+             } catch (ActivityNotFoundException e) {
+                 startActivity(new Intent(Intent.ACTION_VIEW,
+                         Uri.parse("http://play.google.com/store/apps/details?id=" + getPackageName())));
+             }
+         }
+         else if (id == R.id.nav_feedback)
+         {
 
-        } else if (id == R.id.nav_feedback) {
+         }
+         else if (id == R.id.nav_sendQuestions)
+         {
 
-        }
-        else if (id == R.id.nav_sendQuestions) {
+         }
+         else if (id == R.id.nav_Contributors)
+         {
 
-        }else if (id == R.id.nav_Contributors) {
-
-        }
+         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
