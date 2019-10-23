@@ -3,14 +3,14 @@ package com.piyushmaheswari.everythingandroid.Android;
 
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
-import android.widget.TextView;
+
 
 import com.piyushmaheswari.everythingandroid.R;
 
@@ -20,8 +20,6 @@ import java.util.List;
 
 public class BasicsFragment extends Fragment {
 
-    private ExpandableListView expandableListView;
-    private ExpandableListAdapter expandableListAdapter;
     private List<String> listDataHeader;
     private HashMap<String,List<String>> listHashMap;
 
@@ -31,13 +29,13 @@ public class BasicsFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View v= inflater.inflate(R.layout.fragment_basics, container, false);
-        expandableListView=v.findViewById(R.id.expandableListBasicsAndroid);
+        ExpandableListView expandableListView = v.findViewById(R.id.expandableListBasicsAndroid);
         initData();
-        expandableListAdapter=new ExpandableListAdapter(getActivity(),listDataHeader,listHashMap);
+        ExpandableListAdapter expandableListAdapter = new ExpandableListAdapter(getActivity(), listDataHeader, listHashMap);
         expandableListView.setAdapter(expandableListAdapter);
 
 
