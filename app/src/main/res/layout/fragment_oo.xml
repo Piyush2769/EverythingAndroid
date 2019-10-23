@@ -5,10 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".Java.OOPFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ExpandableListView
+        android:id="@+id/expandableListOOP"
+        android:divider="#a9a9a9"
+        android:dividerHeight="1dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent"/>
 
 </FrameLayout>
