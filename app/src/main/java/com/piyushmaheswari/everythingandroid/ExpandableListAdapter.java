@@ -1,4 +1,4 @@
-package com.piyushmaheswari.everythingandroid.Android;
+package com.piyushmaheswari.everythingandroid;
 
 import android.content.Context;
 import android.graphics.Typeface;

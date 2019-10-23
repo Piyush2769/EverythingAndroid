@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 
 
+import com.piyushmaheswari.everythingandroid.ExpandableListAdapter;
 import com.piyushmaheswari.everythingandroid.R;
 
 import java.util.ArrayList;
