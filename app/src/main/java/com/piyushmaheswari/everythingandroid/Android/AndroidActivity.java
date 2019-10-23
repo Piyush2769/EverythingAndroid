@@ -16,9 +16,6 @@ public class AndroidActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private AndroidTabsAdapter androidTabsAdapter;
 
-    private TextView tt;
-    private TextView ttk;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class AndroidTabsAdapter extends FragmentPagerAdapter {
 
-    public AndroidTabsAdapter(FragmentManager fm) {
+    AndroidTabsAdapter(FragmentManager fm) {
         super(fm);
     }
 
