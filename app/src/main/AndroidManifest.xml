@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SendQuestionsActivity"></activity>
+        <activity android:name=".Favourites"></activity>
+        <activity android:name=".TipsTricksActivity" />
+        <activity android:name=".FlutterActivity" />
+        <activity android:name=".KotlinActivity" />
+        <activity android:name=".SendQuestionsActivity" />
         <activity android:name=".FeedbackActivity" />
         <activity android:name=".Java.JavaActivity" />
         <activity android:name=".Android.AndroidActivity" />
