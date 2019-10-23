@@ -24,7 +24,7 @@ import com.piyushmaheswari.everythingandroid.Java.JavaActivity;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    RelativeLayout android,java;
+    RelativeLayout android,java,kotlin,flutter,tips,favourite;
 
 
     @Override
@@ -58,6 +58,42 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 Intent i=new Intent(MainActivity.this, JavaActivity.class);
+                startActivity(i);
+            }
+        });
+
+        kotlin=findViewById(R.id.kotlin_main);
+        kotlin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(MainActivity.this, KotlinActivity.class);
+                startActivity(i);
+            }
+        });
+
+        flutter=findViewById(R.id.flutter_main);
+        flutter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(MainActivity.this, FlutterActivity.class);
+                startActivity(i);
+            }
+        });
+
+        tips=findViewById(R.id.tips_main);
+        tips.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(MainActivity.this, TipsTricksActivity.class);
+                startActivity(i);
+            }
+        });
+
+        favourite=findViewById(R.id.fav_main);
+        favourite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(MainActivity.this, Favourites.class);
                 startActivity(i);
             }
         });

@@ -35,7 +35,7 @@ public class BasicsFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View v= inflater.inflate(R.layout.fragment_basics, container, false);
-        expandableListView=v.findViewById(R.id.expandableList);
+        expandableListView=v.findViewById(R.id.expandableListBasicsAndroid);
         initData();
         expandableListAdapter=new ExpandableListAdapter(getActivity(),listDataHeader,listHashMap);
         expandableListView.setAdapter(expandableListAdapter);
@@ -78,9 +78,6 @@ public class BasicsFragment extends Fragment {
         listHashMap.put(listDataHeader.get(2),q3);
         listHashMap.put(listDataHeader.get(3),q4);
         listHashMap.put(listDataHeader.get(4),q5);
-
-
-
 
     }
 

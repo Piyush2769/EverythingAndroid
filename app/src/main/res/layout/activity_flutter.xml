@@ -6,4 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".FlutterActivity">
 
+    <ExpandableListView
+        android:id="@+id/expandableListFlutter"
+        android:divider="#a9a9a9"
+        android:dividerHeight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
 </android.support.constraint.ConstraintLayout>
