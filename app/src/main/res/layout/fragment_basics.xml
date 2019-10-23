@@ -8,12 +8,10 @@
     tools:context=".Android.BasicsFragment">
 
    <ExpandableListView
-       android:id="@+id/expandableList"
-       android:divider="#000"
+       android:id="@+id/expandableListBasicsAndroid"
+       android:divider="#a9a9a9"
        android:dividerHeight="1dp"
        android:layout_width="match_parent"
-       android:layout_height="match_parent">
-
-   </ExpandableListView>
+       android:layout_height="match_parent"/>
 
 </FrameLayout>
