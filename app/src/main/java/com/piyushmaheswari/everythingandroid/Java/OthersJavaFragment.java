@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
+import android.widget.TextView;
 
 import com.piyushmaheswari.everythingandroid.ExpandableListAdapter;
 import com.piyushmaheswari.everythingandroid.R;
@@ -19,6 +20,8 @@ import java.util.List;
  * A simple {@link Fragment} subclass.
  */
 public class OthersJavaFragment extends Fragment {
+
+    private TextView s;
 
     private List<String> listDataHeader;
     private HashMap<String, List<String>> listHashMap;
