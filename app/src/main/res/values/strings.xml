@@ -19,6 +19,10 @@
     <string name="android">Android</string>
     <string name="java">Java</string>
     <string name="flutter">Flutter</string>
+    <string name="favourites">Favourites</string>
+    <string name="tips">Tips!</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="everything_android">Everything Android</string>
 
 
     <string-array name="my_books">

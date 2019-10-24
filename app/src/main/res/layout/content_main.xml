@@ -57,7 +57,7 @@
                     android:textSize="30sp"
                     android:textColor="#fff"
                     android:textStyle="bold"
-                    android:text="Kotlin" />
+                    android:text="@string/kotlin" />
 
             </RelativeLayout>
 
@@ -139,7 +139,7 @@
                     android:textSize="30sp"
                     android:textColor="#fff"
                     android:textStyle="bold"
-                    android:text="Tips!" />
+                    android:text="@string/tips" />
 
             </RelativeLayout>
 
@@ -157,10 +157,10 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:layout_marginTop="10dp"
-                    android:textSize="20dp"
-                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textColor="#fff"
                     android:textStyle="bold"
-                    android:text="Favourites" />
+                    android:text="@string/favourites" />
             </RelativeLayout>
 
 
