@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ExpandableListView;
 
+import com.piyushmaheswari.everythingandroid.Android.ExpandableListAdapter;
+
 import java.util.HashMap;
 import java.util.List;
 

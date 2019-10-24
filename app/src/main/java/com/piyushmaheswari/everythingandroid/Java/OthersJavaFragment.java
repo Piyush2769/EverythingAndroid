@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
 
-import com.piyushmaheswari.everythingandroid.ExpandableListAdapter;
+import com.piyushmaheswari.everythingandroid.Android.ExpandableListAdapter;
 import com.piyushmaheswari.everythingandroid.R;
 
 import java.util.HashMap;

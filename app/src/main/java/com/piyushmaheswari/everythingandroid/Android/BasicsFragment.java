@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 
 
-import com.piyushmaheswari.everythingandroid.ExpandableListAdapter;
 import com.piyushmaheswari.everythingandroid.R;
 
 import java.util.ArrayList;
@@ -34,10 +33,10 @@ public class BasicsFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View v= inflater.inflate(R.layout.fragment_basics, container, false);
-        ExpandableListView expandableListView = v.findViewById(R.id.expandableListBasicsAndroid);
-        initData();
-        ExpandableListAdapter expandableListAdapter = new ExpandableListAdapter(getActivity(), listDataHeader, listHashMap);
-        expandableListView.setAdapter(expandableListAdapter);
+       // ExpandableListView expandableListView = v.findViewById(R.id.expandableListBasicsAndroid);
+        //initData();
+        //ExpandableListAdapter expandableListAdapter = new ExpandableListAdapter(getActivity(), listDataHeader, listHashMap);
+        //expandableListView.setAdapter(expandableListAdapter);
 
 
         return v;
