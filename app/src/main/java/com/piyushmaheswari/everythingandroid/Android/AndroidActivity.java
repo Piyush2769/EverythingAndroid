@@ -11,6 +11,7 @@ import com.piyushmaheswari.everythingandroid.R;
 
 public class AndroidActivity extends AppCompatActivity {
 
+    private ViewPager s;
     private Toolbar toolbar;
     private ViewPager viewPager;
     private TabLayout tabLayout;
