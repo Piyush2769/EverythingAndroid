@@ -19,6 +19,7 @@ public class AndroidActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        TextView s;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_android);
 
