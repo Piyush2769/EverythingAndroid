@@ -13,6 +13,7 @@ public class AndroidActivity extends AppCompatActivity {
 
     private ViewPager s;
     private ViewPager ss;
+    private ViewPager sss;
     private Toolbar toolbar;
     private ViewPager viewPager;
     private TabLayout tabLayout;
