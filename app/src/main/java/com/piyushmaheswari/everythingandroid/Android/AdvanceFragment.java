@@ -11,6 +11,8 @@ import android.widget.ExpandableListView;
 
 import com.piyushmaheswari.everythingandroid.R;
 
+import org.w3c.dom.Text;
+
 import java.util.HashMap;
 import java.util.List;
 
@@ -19,7 +21,7 @@ import java.util.List;
  */
 public class AdvanceFragment extends Fragment {
 
-
+    private Text d;
     private List<String> listDataHeader;
     private HashMap<String,List<String>> listHashMap;
 
